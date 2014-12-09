@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/simple_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="simNotification"
+        android:text="simple_notification" />
+
+    <Button
+        android:id="@+id/large_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simple_notification"
+        android:onClick="largePicture"
+        android:text="点击到转到指定 Activity" />
+
+    <Button
+        android:id="@+id/complex_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/large_button"
+        android:onClick="comNotification"
+        android:text="bigPicture_notification" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/complex_notification"
+        android:layout_alignParentBottom="true"
+        android:onClick="clearAll"
+        android:layout_alignRight="@+id/complex_notification"
+        android:text="清除所有notification" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Notification"
+        android:id="@+id/Custom_Notification"
+        android:onClick="Cus_Notification"
+        android:layout_below="@+id/complex_notification"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add actions"
+        android:id="@+id/add_actions"
+        android:onClick="add_action"
+        android:layout_below="@+id/Custom_Notification"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress Notification"
+        android:id="@+id/Progress_Notification"
+        android:onClick="Pro_Notification"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
